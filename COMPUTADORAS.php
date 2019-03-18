@@ -1,18 +1,29 @@
-<h1>COMPUTADORAS</h1>
+<table>
+<h3>COMPUTADORAS</h3>
 <?php
-    $form = array('Marca', 'Modelo', 'Procesador', 'GHZ', 'Memoria Ram', 'Disco Duro', 'Enviar');
-    $val = array('marca', 'modelo', 'procesador', 'ghz', 'ram', 'hdd', 'set');
-    for($i=0;$i<count($val);$i++)
-    {
-        if($i==6)
+
+    $form = array('Serie', 'Marca', 'Modelo', 'Procesador', 'GHZ', 'Memoria Ram', 'Disco Duro', 'Guardar');
+    $val = array('serie', 'marca', 'modelo', 'procesador', 'ghz', 'ram', 'hdd', 'set');
+
+    for($i=0;$i<count($val);$i++){
+        if($i==7)
         {
             ?>
-            <input type="submit" name="<?=$val[$i];?>" value="<?=$form[$i];?>"><br>
+            <tr>
+                <td><input type="submit" name="<?=$val[$i];?>" value="<?=$form[$i];?>"></td>
+                <td></td>
+            </tr>
+            
             <?php
         }else{
         ?>
-            <input type="text" name="<?=$val[$i];?>" placeholder="<?=$form[$i];?>"><br>
+            <tr>
+                <td><span><?=$form[$i];?></span></td>
+                <td><input type="text" name="<?=$val[$i];?>"></td>
+            </tr>
+            
         <?php
         }
     }
 ?>
+</table>

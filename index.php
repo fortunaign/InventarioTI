@@ -9,7 +9,10 @@
 </head>
 <body>
     <?php
-        include 'COMPUTADORAS.php';
+    include 'MONITOR.php';
+    include 'COMPUTADORAS.php';
+    include 'TECLADO.php';
+    include 'MOUSE.php';
     ?>
 </body>
 </html>
