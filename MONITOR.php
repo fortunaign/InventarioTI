@@ -1,4 +1,9 @@
-<h3>MONITOR</h3>
+
+<table>
+    <tr>
+        <td colspan="2"><h3>MONITOR</h3></td>
+        <td></td>
+    </tr>
 <?php
 
     $form = array('Serie', 'Marca', 'Pulgadas', 'Estado', 'Guardar');
@@ -8,12 +13,20 @@
         if($i==4)
         {
             ?>
-            <input type="submit" name="<?=$val[$i];?>" value="<?=$form[$i];?>"><br>
+            <tr>
+                <td><input type="submit" name="<?=$val[$i];?>" value="<?=$form[$i];?>"><br></td>
+                <td></td>
+            </tr>
             <?php
         }else{
         ?>
-            <span><?=$form[$i];?></span><input type="text" name="<?=$val[$i];?>"><br>
+            <tr>
+                <td><span><?=$form[$i];?></span></td>
+                <td><input type="text" name="<?=$val[$i];?>"></td>
+            </tr>
+            
         <?php
         }
     }
 ?>
+</table>

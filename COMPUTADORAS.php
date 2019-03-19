@@ -1,5 +1,8 @@
 <table>
-<h3>COMPUTADORAS</h3>
+<tr>
+    <td colspan="2"><h3>COMPUTADORAS</h3></td>
+    <td></td>
+</tr>
 <?php
 
     $form = array('Serie', 'Marca', 'Modelo', 'Procesador', 'GHZ', 'Memoria Ram', 'Disco Duro', 'Guardar');
